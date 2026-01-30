@@ -9,8 +9,13 @@ while True:  # loop
     if input_scores.lower() == "done":
         break  # exit the loop
 
-# convert scores into grades
+    try:
+        score = float(input_scores)  # converting to number
+    except ValueError:
+        print("That's not a valid number. Try again!")
+        continue  # back to step 1
 
+# convert scores into grades
 
 
 # convert average to letter
