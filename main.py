@@ -14,6 +14,11 @@ while True:  # loop
     except ValueError:
         print("That's not a valid number. Try again!")
         continue  # back to step 1
+    
+    # check if number is valid (0-100)
+    if score < 0 or score > 100:
+        print("Score must be between 0 and 100.")
+        continue  # back to step 1
 
 # convert scores into grades
 
