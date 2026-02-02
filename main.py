@@ -23,4 +23,13 @@ while True:  # loop
 # convert scores into grades
 
 
+    #add scores to list 
+    scores.append(score)  # add score
+
+    if len(scores) == 0: #check if list is empty
+        print("No valid scores entered. Please try again.")
+    else:  # calculate results
+        lowest_score = min(scores)
+        highest_score = max(scores)
+        average_score = sum(scores) / len(scores) 
 # convert average to letter
