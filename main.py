@@ -33,3 +33,9 @@ while True:  # loop
         highest_score = max(scores)
         average_score = sum(scores) / len(scores) 
 # convert average to letter
+
+
+# print results
+print("\nFinal Report")
+print(f"Lowest: {lowest_score:.1f}")
+print(f"Highest: {highest_score:.1f}")
