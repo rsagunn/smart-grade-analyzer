@@ -21,17 +21,18 @@ while True:  # loop
         continue  # back to step 1
 
 # convert scores into grades
-
-
     #add scores to list 
     scores.append(score)  # add score
+    
+    # convert scores into grades
 
-    if len(scores) == 0: #check if list is empty
-        print("No valid scores entered. Please try again.")
-    else:  # calculate results
-        lowest_score = min(scores)
-        highest_score = max(scores)
-        average_score = sum(scores) / len(scores) 
+if len(scores) == 0: #check if list is empty
+    print("No valid scores entered. Please try again.")
+else:  # calculate results
+    lowest_score = min(scores)
+    highest_score = max(scores)
+    average_score = sum(scores) / len(scores)
+    
 # convert average to letter
     if average_score >= 0 and average_score <= 49: 
         letter_grade = "F"
@@ -47,9 +48,9 @@ while True:  # loop
         letter_grade = "A"
 
 
-# print results
-print("\nFinal Report")
-print(f"Lowest: {lowest_score:.1f}")
-print(f"Highest: {highest_score:.1f}")
-print(f"Average: {average_score:.1f}")
-print(f"Letter: {letter_grade}")
+    # print results
+    print("\nFinal Report")
+    print(f"Lowest: {lowest_score:.1f}")
+    print(f"Highest: {highest_score:.1f}")
+    print(f"Average: {average_score:.1f}")
+    print(f"Letter: {letter_grade}")
