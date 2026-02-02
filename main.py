@@ -33,9 +33,23 @@ while True:  # loop
         highest_score = max(scores)
         average_score = sum(scores) / len(scores) 
 # convert average to letter
+    if average_score >= 0 and average_score <= 49: 
+        letter_grade = "F"
+    elif average_score >= 50 and average_score <= 59:
+        letter_grade = "C-"
+    elif average_score >= 60 and average_score <= 66:
+        letter_grade = "C"
+    elif average_score >= 67 and average_score <= 72:
+        letter_grade = "C+"
+    elif average_score >= 73 and average_score <= 85:
+        letter_grade = "B"
+    elif average_score >= 86 and average_score <= 100:
+        letter_grade = "A"
 
 
 # print results
 print("\nFinal Report")
 print(f"Lowest: {lowest_score:.1f}")
 print(f"Highest: {highest_score:.1f}")
+print(f"Average: {average_score:.1f}")
+print(f"Letter: {letter_grade}")
